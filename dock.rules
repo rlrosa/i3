@@ -1,0 +1,24 @@
+#
+# dock.rules -- reconfigure monitors when Ubuntu laptop is un/docked
+#
+# SETUP:
+#   sudo cp /WHERE/EVER/dock.rules /etc/udev/rules.d
+#   sudo chmod 644 /etc/udev/rules.d/dock.rules
+#   sudo udevadm control --reload-rules
+#   sudo udevadm trigger --action=change
+#
+
+KERNEL=="card0", SUBSYSTEM=="drm", ACTION=="change", RUN+="/home/rrosa/bin/monitor-toggle.sh"
+
+##############################################
+# Editor config:                             #
+##############################################
+# Local Variables:                           #
+# mode: conf-unix                            #
+# indent-tabs-mode: nil                      #
+# fill-column: 96                            #
+# End:                                       #
+##############################################
+# vim: set expandtab shiftwidth=4 tabstop=4: #
+# vim: set textwidth=96:                     #
+##############################################

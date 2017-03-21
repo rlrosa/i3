@@ -1,6 +1,19 @@
 # i3
-i3 config and support scripts
+i3 config and support scripts. Will need tweaking, but probably useful for pulling ideas.
 
+## Features
+Config script includes bindings for controlling:
+  * Screen brightness (xbacklight)
+  * Volume, mute, mic mute
+  * Screen lock
+
+i3status displays:
+  * Vol level
+  * Battery status (internal and external)
+  * wlan0, usb0, eth0 status
+  * Date, time
+
+## Setup
 For ubuntu 16.04 do:
 
     git clone git@github.com:rlrosa/i3.git
